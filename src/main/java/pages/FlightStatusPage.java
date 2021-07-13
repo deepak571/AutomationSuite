@@ -43,34 +43,6 @@ public class FlightStatusPage extends PageBase {
     @FindBy(name = "flightNumber")
     WebElement flightNumberInput;
 
-
-    @FindBy(xpath = "//table[@class='widget-toggle-table']//td[@class='date-head']")
-    WebElement getDate;
-
-    @FindBy(xpath = "//th[@class='a11y-th time']")
-    WebElement deptime;
-
-    @FindBy(xpath = "//td[@class='time']//span[@class='nowrap']")
-    WebElement arrivalTime;
-
-    @FindBy(xpath = "//td[@class='number']")
-    WebElement flightnumnber;
-
-    @FindBy(xpath = "//td[@class='status']")
-    WebElement flightstatus;
-
-    @FindBy(xpath = " //div[contains(@id,'form_result_id')]//p[@class='refresh-date']")
-    WebElement Lastupdated;
-
-    @FindBy(xpath = "//table[@class='widget-toggle-table']")
-    List<WebElement> flightstatusresult;
-
-    @FindBy(xpath = "//div[@class='tab-content active']//div[contains(@id,'form_result_id')]")
-    WebElement Noresultfound;
-
-    @FindBy(xpath = " //div[@class='reinitContent']//button[@class='btn-refresh']")
-    WebElement updatestatus;
-
     @FindBy(xpath = "(//div[@class='o-search-flight-status__card-airports'])[1]/p[1]")
     WebElement resultDepartureAirport;
 
